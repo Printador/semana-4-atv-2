@@ -1,0 +1,12 @@
+class cubo:
+    '''Classe para calcular o valor cúbico de um numero qualquer.'''
+    def __init__(self, valor): 
+        self.x = valor
+        print("Objeto criado.")
+    def cal_cubo(self):
+        cubo = self.x * self.x * self.x
+        return "O cubo do número é: " + str(cubo)
+
+num = cubo(int(input("Digite o número: ")))
+y = num.cal_cubo()
+print(y)
